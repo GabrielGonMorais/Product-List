@@ -11,9 +11,10 @@ class Product extends Database {
         if ($numRows > 0) {
             while($row = $result->fetch_assoc()){
                 $data[] = $row;
+                return $data;
             }
-        }
-        return $data;
+        } 
+        
     }
 
     protected function SetProduct($sku, $name, $price, $size, $weight, $height, $width, $length){
