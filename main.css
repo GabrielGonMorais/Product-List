@@ -1,0 +1,91 @@
+.book-input,
+.furnit-input,
+.dvd-input {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1d3a4e;
+  color: #fff;
+  height: 5rem;
+  z-index: 3;
+}
+
+.appName {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+.container {
+  margin: 100px 50px 50px;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 80px;
+  grid-gap: 25px;
+}
+
+.card {
+  border-radius: 7px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  text-align: center;
+}
+.textcard {
+  margin-top: 50px;
+  line-height: 150%;
+}
+
+.delete-checkbox {
+  position: absolute;
+  left: 0;
+}
+.addscreen {
+  margin: 100px 50px 50px;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  padding: 40px 80px;
+  grid-gap: 25px;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0.35rem;
+}
+
+.addType {
+  border-radius: 0.35rem;
+  flex: 1;
+  height: 2.3rem;
+  padding: 0 20px;
+  margin: 5px 0 15px 0;
+}
+
+.button {
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+  margin: 30px 5px;
+  transform: translateX(300%);
+}
