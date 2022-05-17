@@ -1,6 +1,6 @@
 <?php
-
-include_once 'Products.php';
+namespace App\Classes;
+require __DIR__.'/../../vendor/autoload.php';
 
 class ProductsContr extends Product {
         public function CreateProduct($sku, $name, $price, $size, $weight, $height, $width, $length){

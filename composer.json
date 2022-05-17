@@ -1,0 +1,11 @@
+{
+  "name": "scandiweb/scandiweb",
+  "autoload": {
+    "files": [
+      "app/router/router.php"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}

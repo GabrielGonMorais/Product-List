@@ -23,7 +23,6 @@
 }
 
 .container {
-  margin: 100px 50px 50px;
   box-sizing: border-box;
   height: auto;
   width: auto;
@@ -32,6 +31,7 @@
   justify-content: center;
   padding: 40px 80px;
   grid-gap: 25px;
+  margin: 100px;
 }
 
 .card {
@@ -88,4 +88,8 @@
   padding: 10px;
   margin: 30px 5px;
   transform: translateX(300%);
+}
+
+.button-cancel {
+  padding: 10px;
 }

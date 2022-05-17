@@ -1,28 +1,22 @@
-<?php
-include_once 'classes/Database.php';
-include_once 'classes/Products.php';
-include_once 'classes/ProductsContr.php';
-?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-    <title>Document</title>
+    <title>Document</title>   
 </head>
 
 <body>
 <header class="header">
-<form action="includes.php" method="POST">
+<form action="/../ScandiWeb/app/includes.php" method="POST">
     <div class="appName">Add Product</div>
         <button class="button cancel" name="cancel">Cancel</button>
     </form>
 </header>
 
     <div class="addscreen">
-        <form id="product_form" class="addform" action="services.php" method="POST" accept-charset="utf-8">
+        <form id="product_form" class="addform" action="/../ScandiWeb/app/includes.php" method="POST" accept-charset="utf-8">
               SKU:<input id="sku" class="field" type="text" name="SKU" required><br>
      Product name:<input id="name" class="field" type="text" name="Name" required><br>
         Price ($):<input id ="price" class="field" type="number" name="Price" required><br>
@@ -57,12 +51,12 @@ include_once 'classes/ProductsContr.php';
             });
             });
             </script>
-            <input type="submit" name="Send" value="Save" class="button save"> 
+            <input type="submit" name="Send" value="Save" class="button-cancel"> 
     
         </form>
     </div>
 
-
-<link rel="stylesheet" type="text/css" href="main.css"/> 
+    <link rel="stylesheet" type="text/css" href="/../ScandiWeb/app/main.css"> 
+          
 </body>
 </html>

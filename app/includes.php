@@ -1,7 +1,7 @@
 <?php
-include_once 'classes/Database.php';
-include_once 'classes/Products.php';
-include_once 'classes/ProductsContr.php';
+use App\Classes\ProductsContr;
+
+require __DIR__.'/../vendor/autoload.php';
 
     if(isset($_POST['Send'])){
         $addProduct = new ProductsContr();
@@ -13,20 +13,22 @@ include_once 'classes/ProductsContr.php';
                                 $_POST['height'],
                                 $_POST['width'],
                                 $_POST['length']);
+        
+        header("location:/scandiweb/index.php");
     }
 
 
     if(isset($_POST['massDelete'])){
-            $deleteProduct = new ProductsContr();
-            $deleteProduct->RemoveProduct($_POST['delete-checkbox']);
-            header("location:index.php");
+        $deleteProduct = new ProductsContr();
+        $deleteProduct->RemoveProduct($_POST['delete-checkbox']);
+        header("location:/scandiweb/index.php");
     }
 
     if(isset($_POST['addProduct'])){
-            header("location:addproduct.php");
+        header("location:/scandiweb/app/view/pages/addproduct.php");
     }
 
     if(isset($_POST['cancel'])){
-        header("location:index.php");
+        header("location:/scandiweb/index.php");
     }
 ?>

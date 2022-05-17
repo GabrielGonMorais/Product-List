@@ -1,4 +1,6 @@
 <?php
+namespace App\Classes;
+
 class Database {
     private $ip;
     private $login;
@@ -11,7 +13,7 @@ class Database {
         $this->password = "";
         $this->db = "productsscand";
 
-        $conn = new mysqli($this->ip, $this->login,
+        $conn = new \mysqli($this->ip, $this->login,
         $this->password, $this->db);
 
         return $conn;
